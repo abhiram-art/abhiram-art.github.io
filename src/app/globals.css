@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+  .fade-bottom {
+    background: linear-gradient(to bottom, transparent 90%, black 100%);
+  }
+
+  .light-mode-fade-bottom {
+    background: linear-gradient(to bottom, transparent 95%, white 100%);
+  }
+} */
+@layer theme {
+  .light {
+    --background: 243 244 246;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(var(--background));
+}
