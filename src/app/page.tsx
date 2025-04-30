@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <Sidebar side="left" />
       <Sidebar side="right" />
-      <div className="w-8/12 mx-auto items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div className="w-10/12 mx-auto items-center justify-items-center min-h-screen p-2 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col row-start-2 items-center sm:items-start w-full overflow-hidden">
           <Hero />
           <About />

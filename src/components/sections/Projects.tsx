@@ -19,6 +19,21 @@ const projectsData = [
     ],
   },
   {
+    title: "GatorSwamps",
+    description:
+      "Developed a housing marketplace application using React.js and Golang to streamline apartment searches, featuring a user-friendly interface and efficient backend. Designed a NoSQL database with MongoDB for scalable storage of listings, user profiles, and messages. Implemented advanced search with filters for proximity to campus and amenities to improve usability. Secured the platform with JWT-based authentication and role-based access control for safe, personalized user sessions.",
+    code: "https://github.com/abhiram-art/GatorSwamps",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "AWS RDS",
+      "MySQL",
+      "AWS S3",
+      "AWS EC2",
+      "Git",
+    ],
+  },
+  {
     title: "Pharmatiq",
     description:
       "Built an e-commerce mobile app for medicines that integrates nearby pharmacies for faster delivery. Designed an accessible and intuitive Flutter UI, used Firebase for real-time data storage and backend, and implemented push notifications for order updates and reminders.",
@@ -57,27 +72,27 @@ const projectsData = [
 
 function Projects() {
   return (
-    <section className="text-teal-400 p-8" id="projects">
+    <section className="text-teal-400 p-4 sm:p-8" id="projects">
       <div className="flex flex-col gap-4 w-full">
-        <h1 className="text-2xl font-bold">Projects</h1>
+        <h1 className="text-xl sm:text-2xl font-bold">Projects</h1>
         <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4">
           {projectsData.map((project, index) => (
             <div
               key={index}
               className="flex flex-col border rounded-md dark:border-gray-700"
             >
-              <div className="flex flex-col gap-3 p-4 grow">
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <div className="flex flex-col gap-3 p-3 sm:p-4 grow">
+                <h2 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
                   {project.title}
                 </h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-[4px]">
+                <div className="flex flex-wrap gap-1 sm:gap-[4px]">
                   {project.technologies.map((technology, index) => (
                     <span
                       key={index}
-                      className="bg-slate-200 text-slate-900 border-teal-400 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-white"
+                      className="bg-slate-200 text-slate-900 border-teal-400 text-xs sm:text-sm font-medium me-2 px-2 py-0.5 rounded dark:bg-gray-600 dark:text-white"
                     >
                       {technology}
                     </span>
@@ -87,7 +102,7 @@ function Projects() {
                   <Link href={project.code}>
                     <Button
                       variant="outline"
-                      className="border-teal-400 text-teal-400 dark:border-teal-400"
+                      className="border-teal-400 text-teal-400 dark:border-teal-400 text-xs sm:text-sm"
                     >
                       Code
                     </Button>
@@ -98,7 +113,7 @@ function Projects() {
           ))}
         </div>
       </div>
-      <hr className="my-4 border-t-[2px] border-teal-400 h-[2px] w-1/2" />
+      <hr className="my-4 border-t-[2px] border-teal-400 h-[2px] w-full sm:w-1/2" />
     </section>
   );
 }
