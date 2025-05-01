@@ -117,7 +117,7 @@ const WorkExperience: React.FC = () => {
           ))}
         </ol>
       </div>
-      <hr className="my-4 border-t-[2px] border-teal-400 h-[2px] w-1/2" />
+      <hr className="my-4 border-t-[2px] border-teal-400 h-[2px] w-3/5" />
     </section>
   );
 };
