@@ -22,6 +22,10 @@ const skillsData = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
+    name: "Next.js",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
     name: "Node.js",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
@@ -34,8 +38,12 @@ const skillsData = [
     img: "https://img.icons8.com/ios-filled/50/000000/api-settings.png",
   },
   {
-    name: "Next.js",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    name: "GraphQL",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+  },
+  {
+    name: "SOAP",
+    img: "https://gotapi.com/wp-content/uploads/2023/10/soap-cloud-gear-thumbnail-1024x957.jpg",
   },
   {
     name: "Tailwind CSS",
@@ -66,12 +74,20 @@ const skillsData = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
   },
   {
+    name: "SQL",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
     name: "MongoDB",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
-    name: "SQL",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    name: "PostgreSQL",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "Redis",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
   },
   {
     name: "Git",
@@ -97,6 +113,7 @@ const skillsData = [
     name: "Figma",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+
 ];
 
 function Skills() {
@@ -104,7 +121,7 @@ function Skills() {
     <section className="text-teal-400 p-4 sm:p-8" id="skills">
       <div className="flex flex-col gap-4 w-full">
         <h1 className="text-xl sm:text-2xl font-bold">Skills</h1>
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 sm:gap-4 w-full">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-2 sm:gap-4 w-full">
           {skillsData.map((skill, index) => (
             <div
               key={index}

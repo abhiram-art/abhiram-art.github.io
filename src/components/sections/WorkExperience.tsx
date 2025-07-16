@@ -17,13 +17,13 @@ const workExperienceData: WorkExperienceItem[] = [
     companyName: "Greenstand",
     jobTitle: "Software Development Engineer",
     description: [
-      "Implemented MySQL architecture using Node.js and Sequelize ORM that optimized query performance for the Next.js-based Treetracker Wallet Web App.",
+      "Designed and implemented MySQL database architecture with Node.js and Sequelize ORM, creating optimized table structures and data relationships for Treetracker Wallet Web App.",
       "Built over 15 RESTful APIs using Express.js supporting secure token management features within the application.",
     ],
   },
   {
-    startDate: "September 2024",
-    endDate: "January 2025",
+    startDate: "Sept 2024",
+    endDate: "Jan 2025",
     companyName: "Twilight (University Startup)",
     jobTitle: "Software Developer Volunteer",
     description: [
@@ -31,33 +31,42 @@ const workExperienceData: WorkExperienceItem[] = [
       "Developed RESTful APIs using Node.js and Express.js for efficient backend data handling",
       "Designed responsive and dynamic frontend with Angular to enhance user experience",
       "Implemented hybrid data storage architecture using MongoDB and SQL for optimized performance and scalability",
+      "Implemented Redis pub-sub architecture to trigger Brevo email workflows on signups, cutting notification delay by 40%.",
     ],
   },
   {
-    startDate: "August 2024",
-    endDate: "December 2024",
+    startDate: "Aug 2024",
+    endDate: "Dec 2024",
     companyName: "Superstars, Inc.",
     jobTitle: "Software Developer Intern",
     description: [
-      "Developed responsive front-end components using Angular, HTML, CSS, and TypeScript",
-      "Integrated frontend with backend through API testing and validation using Postman",
-      "Collaborated with product team to enhance application features and participate in sprint meetings",
-      "Architected reusable video components using MediaRecorder API and WebRTC",
-      "Implemented AWS CloudFront delivery reducing component code duplication by 40% across 10+ pages",
+      "Developed 10+ responsive front-end components for the web application with Angular, HTML, CSS, and TypeScript, ensuring seamless integration with the backend through comprehensive API testing of 14+ endpoints with Postman.",
+      "Collaborated with a cross-functional team of 5 members, driving 3 major product improvements that increased user engagement by 18% through implementation of key features identified in weekly sprint planning.",
+      "Implemented basic Cypress tests for 3 key user workflows (authentication, profile management, content submission) alongside the QA team to increase automated test coverage of critical frontend features.",
+      "Built 6 reusable video components using MediaRecorder API and WebRTC that significantly reduced code duplication by 30% across video features used on 12+ pages, and integrated AWS CloudFront for optimized video delivery.",
     ],
   },
   {
-    startDate: "January 2022",
-    endDate: "May 2022",
+    startDate: "Mar 2022",
+    endDate: "Jun 2022",
     companyName: "Mactores",
     jobTitle: "Cloud Engineer Intern",
     description: [
-      "Developed and deployed scalable cloud solutions using Amazon EC2 and S3",
-      "Configured AWS IAM roles/policies and VPC for enhanced security measures",
-      "Implemented monitoring system with Amazon CloudWatch for resource usage tracking",
-      "Optimized application performance through cloud infrastructure improvements",
+      "Optimized client AWS costs by 20% through right-sizing analysis and resource recommendations across 3 accounts.",
+      "Implemented environment-specific deployment logic in GitHub Actions for AWS Lambda functions, reducing deployment errors by 25%",
+      "Assisted cloud engineering team in migrating 2 legacy applications to AWS, helping implement load-balanced, auto-scaled infrastructure that reduced server crashes by over 14%.",
     ],
   },
+  {
+    startDate: "Nov 2021",
+    endDate: "Mar 2022",
+    companyName: "Bennett University",
+    jobTitle: "Research Assistant",
+    description: [
+      "Implemented ensemble models (Random Forest, XGBoost) for COVID-19 transmission analysis, improving prediction accuracy from 73% to 85% using cross-validation by optimizing feature selection and model parameters.",
+      "Streamlined data processing using Python Pandas scripts, reducing manual Excel-based analysis time by 25%.",
+    ],
+  }
 ];
 
 const WorkExperience: React.FC = () => {
