@@ -13,7 +13,7 @@ export const Footer = () => {
 
             <div className="flex flex-col gap-4">
               <h4 className="text-teal-400 text-lg font-medium">Quick Links</h4>
-              <a href="https://www.linkedin.com/in/abhiram-palika-0b22591b2" className="text-gray-400 hover:text-teal-400 transition-colors">
+              <a href="https://www.linkedin.com/in/abhirampalika" className="text-gray-400 hover:text-teal-400 transition-colors">
                 LinkedIn
               </a>
               <a href="https://github.com/abhiram-art" className="text-gray-400 hover:text-teal-400 transition-colors">
@@ -21,9 +21,6 @@ export const Footer = () => {
               </a>
               <a href="https://instagram.com/abhi_ram354" className="text-gray-400 hover:text-teal-400 transition-colors">
                 Instagram
-              </a>
-              <a href="https://x.com/ramabhi354" className="text-gray-400 hover:text-teal-400 transition-colors">
-                X (Twitter)
               </a>
             </div>
 

@@ -28,7 +28,7 @@ export const Sidebar = ({ side }: SidebarProps) => {
             <AiFillGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/abhiram-palika-0b22591b2"
+            href="https://www.linkedin.com/in/abhirampalika"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-200 hover:text-teal-400 dark:hover:text-teal-300 transition-all duration-300 hover:-translate-y-1"
@@ -42,14 +42,6 @@ export const Sidebar = ({ side }: SidebarProps) => {
             className="text-gray-600 dark:text-gray-200 hover:text-teal-400 dark:hover:text-teal-300 transition-all duration-300 hover:-translate-y-1"
           >
             <AiFillInstagram size={24} />
-          </a>
-          <a
-            href="https://x.com/ramabhi354"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-200 hover:text-teal-400 dark:hover:text-teal-300 transition-all duration-300 hover:-translate-y-1"
-          >
-            <AiOutlineX size={24} />
           </a>
           <div className="h-24 w-px bg-gray-400 mt-4" />
         </div>
