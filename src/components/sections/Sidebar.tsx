@@ -35,14 +35,6 @@ export const Sidebar = ({ side }: SidebarProps) => {
           >
             <AiOutlineLinkedin size={24} />
           </a>
-          <a
-            href="https://instagram.com/abhi_ram354"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-200 hover:text-teal-400 dark:hover:text-teal-300 transition-all duration-300 hover:-translate-y-1"
-          >
-            <AiFillInstagram size={24} />
-          </a>
           <div className="h-24 w-px bg-gray-400 mt-4" />
         </div>
       ) : (

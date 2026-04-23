@@ -19,9 +19,6 @@ export const Footer = () => {
               <a href="https://github.com/abhiram-art" className="text-gray-400 hover:text-teal-400 transition-colors">
                 Github
               </a>
-              <a href="https://instagram.com/abhi_ram354" className="text-gray-400 hover:text-teal-400 transition-colors">
-                Instagram
-              </a>
             </div>
 
             <div className="flex flex-col gap-4">
