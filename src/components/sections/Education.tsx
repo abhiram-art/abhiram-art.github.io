@@ -11,17 +11,17 @@ interface EducationItem {
 
 const EducationData: EducationItem[] = [
   {
-    startDate: "Jan 2023",
+    startDate: "August 2023",
     endDate: "December 2024",
     collegeName: "University of Florida",
-    courseName: "Master of Science in Computer Science",
+    courseName: "Master of Science, Computer Science",
     address: "Gainesville, FL",
   },
   {
     startDate: "July 2019",
     endDate: "May 2023",
     collegeName: "Bennett University",
-    courseName: "Bachelor of Technology in Computer Science",
+    courseName: "Bachelor of Technology, Computer Science",
     address: "Delhi, India",
   },
 ];
@@ -45,7 +45,10 @@ const Education: React.FC = () => {
                 {item.startDate} - {item.endDate || "Present"}
               </time>
               <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
-                {item.courseName} at {item.collegeName || item.schoolName}
+                {item.courseName} 
+              </h3>
+              <h3 className="text-base sm:text-sm font-semibold text-gray-900 dark:text-white">
+                {item.collegeName || item.schoolName}
               </h3>
               <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
                 {item.address}

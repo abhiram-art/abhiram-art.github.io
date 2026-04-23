@@ -12,13 +12,24 @@ interface WorkExperienceItem {
 
 const workExperienceData: WorkExperienceItem[] = [
   {
-    startDate: "Jan 2025",
+    startDate: "Dec 2025",
     endDate: "Present",
+    companyName: "Falcon Technologies",
+    jobTitle: "Software Engineer",
+    description: [
+      "Architected 15+ RESTful API endpoints in Node.js/Express with async non-blocking middleware pipeline, reducing average API response time by ~25% through query optimization and eliminating redundant DB roundtrips.",
+      "Designed a custom middleware pipeline enforcing authentication, input validation, and rate-limiting across all API routes, reducing unauthorized request failures by ~30% and improving backend fault tolerance.",
+    ],
+  },
+  {
+    startDate: "Jan 2025",
+    endDate: "Dec 2025",
     companyName: "Greenstand",
     jobTitle: "Software Development Engineer",
     description: [
-      "Designed and implemented MySQL database architecture with Node.js and Sequelize ORM, creating optimized table structures and data relationships for Treetracker Wallet Web App.",
-      "Built over 15 RESTful APIs using Express.js supporting secure token management features within the application.",
+      "Optimized database query performance by implementing composite indexes on frequently queried columns reducing wallet transaction retrieval API response time from 850ms to 320ms through query analysis and EXPLAIN plan optimization.",
+      "Standardized REST API contract design for 10+ wallet endpoints, enforcing strict request/response schemas that cut integration turnaround by ~25% and eliminated data inconsistencies in digital tree token transaction tracking.",
+      "Architected backend service modules for QR-based token transfer flows in TypeScript, reducing business logic duplication by ~30% across 8 wallet routes and improving maintainability."
     ],
   },
   {
@@ -41,9 +52,8 @@ const workExperienceData: WorkExperienceItem[] = [
     jobTitle: "Software Developer Intern",
     description: [
       "Developed 10+ responsive front-end components for the web application with Angular, HTML, CSS, and TypeScript, ensuring seamless integration with the backend through comprehensive API testing of 14+ endpoints with Postman.",
-      "Collaborated with a cross-functional team of 5 members, driving 3 major product improvements that increased user engagement by 18% through implementation of key features identified in weekly sprint planning.",
-      "Implemented basic Cypress tests for 3 key user workflows (authentication, profile management, content submission) alongside the QA team to increase automated test coverage of critical frontend features.",
-      "Built 6 reusable video components using MediaRecorder API and WebRTC that significantly reduced code duplication by 30% across video features used on 12+ pages, and integrated AWS CloudFront for optimized video delivery.",
+      "Collaborated in agile development environment with a cross-functional team of 5 members, participating in weekly sprint planning sessions, driving 3 major product improvements that increased user engagement by 18%.",
+      "Built 6 reusable video components using MediaRecorder API deployed across 12+ pages, reducing code duplication by 30%, and integrating AWS CloudFront for edge-cached delivery that cut average video load latency by ~35%.",
     ],
   },
   {
@@ -54,19 +64,9 @@ const workExperienceData: WorkExperienceItem[] = [
     description: [
       "Optimized client AWS costs by 20% through right-sizing analysis and resource recommendations across 3 accounts.",
       "Implemented environment-specific deployment logic in GitHub Actions for AWS Lambda functions, reducing deployment errors by 25%",
-      "Assisted cloud engineering team in migrating 2 legacy applications to AWS, helping implement load-balanced, auto-scaled infrastructure that reduced server crashes by over 14%.",
+      "Configured CloudWatch dashboards and alerting pipelines across 2 AWS-migrated applications, improving automated incident detection and reducing mean time to detect failures by ~40%.",
     ],
   },
-  {
-    startDate: "Nov 2021",
-    endDate: "Mar 2022",
-    companyName: "Bennett University",
-    jobTitle: "Research Assistant",
-    description: [
-      "Implemented ensemble models (Random Forest, XGBoost) for COVID-19 transmission analysis, improving prediction accuracy from 73% to 85% using cross-validation by optimizing feature selection and model parameters.",
-      "Streamlined data processing using Python Pandas scripts, reducing manual Excel-based analysis time by 25%.",
-    ],
-  }
 ];
 
 const WorkExperience: React.FC = () => {
